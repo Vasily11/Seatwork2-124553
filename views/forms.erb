@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<title>Reservations</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon (1).ico"/>
+	<link rel="stylesheet" type="text/css"/ href="Stylesheet.css">
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/home">Hotel Chinese</a><!-- this is where you set the navigation title -->
+        </div>
+        <div class="collapse navbar-collapse"><!-- collapse allows for this navbar to be used in mobile devices -->
+          <ul class="nav navbar-nav"><!-- this is the list of navigation options in your navbar -->
+            <li class="active"><a href="/home">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/rooms">Available Rooms</a></li>
+			<li><a href="/forms">Reservations</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <br/><br/><br/>
+		<center><h1>RESERVE A ROOM</h1>
+		<form method="POST" action="/forms">
+			<label for = "Rooms">Rooms</label>
+			
+			<select name ="name">
+				<option value="PresidentialSuite">China Suite</option>
+				<option value="PresidentialSuite">Chinier Suite</option>
+				<option value="PresidentialSuite">Chiniest Suite</option>
+			</select>
+			
+			</br>
+			<br />
+				Check in: <input type="datetime" name="checkin">
+				Check out: <input type="datetime" name="checkout">
+			
+			<br ></br>
+			<input type = "submit"/ value = "Go!"/>
+		</form></center>
+	</body>
+</html>
